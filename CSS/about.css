@@ -1,7 +1,8 @@
-img{
+img {
     width: 100%;
     height: auto;
 }
+
 body {
     font-family: 俐方體11號;
     font-size: 20px;
@@ -13,6 +14,7 @@ body {
     height: 1080px;
     background-color: #B5884C;
     position: fixed;
+    right: 0;
     right: -400px;
 }
 
@@ -42,7 +44,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    margin: 290px auto 0 auto;
+    margin: 200px auto 0 auto;
 }
 
 .icon {
@@ -69,7 +71,8 @@ body {
     right: 60px;
     top: 60px;
 }
-.bar>img{
+
+.bar>img {
     width: 52px;
 }
 
@@ -83,27 +86,115 @@ body {
 }
 
 /* info */
-.logo{
-    width: 300px;
-    transform: rotate(-4deg);
+.about {
+    display: flex;
+    justify-content: center;
 }
-.mainPicture{
+
+.character {
+    margin: 0 auto;
+    width: 80%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    width: 300px;
+    height: 240px;
+    transform: rotate(-4deg);
+    position: relative;
+    top: 80px;
+    margin: 0 40px;
+    /* left: 244px; */
+}
+
+.CEN{
+    align-self: flex-end;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.bigPicture {
+    background-color: #C0CA71;
+    border-radius: 44px 44px 0 0;
+    /* top: 200px; */
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+.mainPicture {
     width: 440px;
+    position: relative;
+    bottom: -5px;
+}
+
+.progressBar {
+    width: 440px;
+    height: 4px;
+    background-color: #755E3C;
+    /* position: relative;
+    top: 260px; */
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+.progressBar::after {
+    content: "“CLICK”";
+    line-height: 48px;
+    margin-left: 186px;
+}
+
+.name>span {
+    font-size: 96px;
+}
+
+.name {
+    width: 400px;
+    height: 100px;
+    font-size: 64px;
+    /* border-bottom: 8px solid #755E3C; */
+    margin-top: 280px;
+}
+.name:after{
+    content: "";
+    display: block;
+    width: 400px;
+    height: 8px;
+    background-color: #755E3C;
+}
+
+.info{
+    width: 80%;
+    position: relative;
+}
+
+.firstLeft{
+    margin-top: 360px;
 }
 
 .attributes{
+    margin-top: 12px;
+}
+.attributes {
     width: 380px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 16px;
 }
-.ATTR{
+
+.ATTR {
     line-height: 48px;
     text-align: center;
     display: flex;
 }
-.type{
+
+.type {
     width: 100px;
     height: 48px;
     background-color: #B5884C;
@@ -112,22 +203,25 @@ body {
     line-height: 48px;
     text-align: center;
 }
-.level{
+
+.level {
     width: 64px;
     height: 48px;
     background-color: rgba(253, 253, 253, 0.6);
     border: 1px solid #000;
-    border-left: 0 ;
-    border-radius:  0 10px 10px 0;
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
     font-size: 24px;
 }
-.mid{
+
+.mid {
     font-size: 24px;
     color: #765C42;
     margin-top: 28px;
 }
-.mid:after{
-    content:"";
+
+.mid:after {
+    content: "";
     line-height: 24px;
     margin-left: 4px;
     width: 0;
@@ -137,7 +231,31 @@ body {
     border-color: transparent transparent transparent #765C42;
     display: inline-block;
 }
-.small{
+
+.small {
     margin-top: 12px;
     color: #412F2B;
+}
+
+.secondLeft{
+    margin-top: 360px;
+    display: none;
+}
+
+.firstRight{
+    margin-right: 20px;
+    position: absolute;
+    top: 432px;
+    right: 0;
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.skills{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #B5884C;
 }
