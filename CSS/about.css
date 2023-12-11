@@ -1,5 +1,11 @@
+img{
+    width: 100%;
+    height: auto;
+}
 body {
     font-family: 俐方體11號;
+    font-size: 20px;
+    background-color: #EADCBF;
 }
 
 .nav {
@@ -49,7 +55,6 @@ body {
 .firstScreen {
     width: 100%;
     height: 1300px;
-    background-color: #EADCBF;
 }
 
 .aboutUs {
@@ -75,4 +80,64 @@ body {
     position: relative;
     top: 540px;
     transform: translateY(-96px);
+}
+
+/* info */
+.logo{
+    width: 300px;
+    transform: rotate(-4deg);
+}
+.mainPicture{
+    width: 440px;
+}
+
+.attributes{
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.ATTR{
+    line-height: 48px;
+    text-align: center;
+    display: flex;
+}
+.type{
+    width: 100px;
+    height: 48px;
+    background-color: #B5884C;
+    border: 1px solid #000;
+    border-radius: 10px 0 0 10px;
+    line-height: 48px;
+    text-align: center;
+}
+.level{
+    width: 64px;
+    height: 48px;
+    background-color: rgba(253, 253, 253, 0.6);
+    border: 1px solid #000;
+    border-left: 0 ;
+    border-radius:  0 10px 10px 0;
+    font-size: 24px;
+}
+.mid{
+    font-size: 24px;
+    color: #765C42;
+    margin-top: 28px;
+}
+.mid:after{
+    content:"";
+    line-height: 24px;
+    margin-left: 4px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #765C42;
+    display: inline-block;
+}
+.small{
+    margin-top: 12px;
+    color: #412F2B;
 }
